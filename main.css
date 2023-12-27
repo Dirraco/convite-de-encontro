@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: yellowgreen;
+    background-color: #cfcfcf;
 }
 
 .container {
@@ -16,6 +16,11 @@ body {
     
 }
 
+audio {
+    z-index: 2;
+    padding: 10px;
+}
+
 .form_main {
     width: 720px;
     height: 500px;
@@ -23,7 +28,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff5e;
     padding: 30px 30px 30px 30px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.062);
     position: relative;
@@ -35,7 +40,7 @@ body {
     content: "";
     width: 450px;
     height: 450px;
-    background-color: rgb(209, 193, 255);
+    background-color: #ff5454;
     transform: rotate(45deg);
     left: -180px;
     bottom: 30px;
@@ -46,14 +51,14 @@ body {
 
 .heading {
     font-size: 2em;
-    color: #2e2e2e;
+    color: #ff5454;
     font-weight: 700;
     margin: 5px 0 10px 0;
     z-index: 2;
 }
 
 .inputContainer {
-    width: 100%;
+    width: 50%;
     position: relative;
     display: flex;
     align-items: center;
@@ -71,7 +76,7 @@ body {
     height: 30px;
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid rgb(173, 173, 173);
+    border-bottom: 2px solid #000000;
     margin: 10px 0;
     color: black;
     font-size: .8em;
@@ -82,11 +87,11 @@ body {
 
 .inputField:focus {
     outline: none;
-    border-bottom: 2px solid rgb(199, 114, 255);
+    border-bottom: 2px solid #000000;
 }
 
 .inputField::placeholder {
-    color: rgb(80, 80, 80);
+    color: #000000;
     font-size: 1em;
     font-weight: 500;
 }
@@ -94,28 +99,19 @@ body {
 #button {
     z-index: 2;
     position: relative;
-    width: 100%;
+    width: 40%;
     border: none;
-    background-color: rgb(162, 104, 255);
+    background-color: #ff5454;
     height: 30px;
     color: white;
     font-size: .8em;
     font-weight: 500;
     letter-spacing: 1px;
     margin: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 #button:hover {
-    background-color: rgb(126, 84, 255);
-}
-
-.forgotLink {
-    z-index: 2;
-    font-size: .7em;
-    font-weight: 500;
-    color: rgb(44, 24, 128);
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 20px;
+    background-color: #fc8080;
 }
